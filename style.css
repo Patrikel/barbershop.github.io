@@ -1,0 +1,372 @@
+body{
+	font-family: 'Squada One', cursive;
+}
+
+/*Cabeçalho*/
+header{ 					/*Meu cabeçalho (header) está recebendo uma cor de fundo (backgorund) em RGB e o cod da cor cinza é #BBBBBB*/
+	background: #BBBBBB;	/*Cor de fundo cinza. Toda cor que é declarada no CSS precisa do #*/
+	padding: 20px 0;		/*padding é o espaçamento interno no elemento. Estou colocando um espaçamento interdo de 20px. px = pixel*/
+}
+
+.imagemLogo{				/*classe da imagem do logo*/
+	width: 31%;
+}
+
+.caixa{						/*referencia a classe sempre começa com . essa classe é referente a navegação <nav>. Estou estilizando ela*/
+	position: relative;		/*A posição dela é relativa a definição feita em <nav>*/
+	width: 940px;			/*A largura está definida em até 940px*/
+	margin: 0 auto;			/*A margim (espaçamento externo do elemento) tem topo e baixo = 0 e as laguras auto = automaticas*/
+}
+
+nav{						/*CSS aplicado na tag nav*/
+	position:absolute;/*Os elementos de navegação estão inciando, absolutos (significa que ele pode ser colocado em toda extemção da pagina*/
+	top: 122px;				/*Os elementos de navegação estão em cima a 110px do topo da pág*/
+	right: 0px;				/*Os elementos de navegação estão em a direita colado na margem (que foi fedinida no CSS .caixa)*/
+}
+
+nav li{						/*CSS aplicado nos (list item) que está na navegação <nav>*/
+	display: inline;		/*Os Itens estão em linha (inline).*/
+	margin-left: 15px;		/*Criando uma Margim externa para a esquerda para deixar os elementos da lista mais afastados (15px) um do outro*/
+}
+
+nav a{						/*CSS aplicados na Tag <a> = ancora dentro da navegação*/
+	text-transform: uppercase; /*Estou transformando o texto (text-transform) em letra maiuscula (uppercase)*/
+	color: #000000;			/*Definindo a cor (color) das letras em preto (#000000) */
+	font-weight: bold;		/*Definindo o peso da fonte (font-wight) em negrito (bold)*/
+	font-size: 35px;		/*Definindo o tamanho da font (font-size) em 22px*/
+	text-decoration: none;	/*Definindo que não pe para ter nenhuma decoração imposta pelo navegador (text-decoration: none)*/
+}
+
+nav a:hover{
+	color: #C78C19;
+	text-decoration: underline;
+}
+/*Fim Cabeçalho*/
+
+/*Inicio do Conteudo Produtos*/
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding:50px 0;
+
+}
+
+.produtos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px; 
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover{
+	border-color: #C78C19;
+}
+
+.produtos li:active{
+	border-color: #088C19;
+}
+
+.produtos li:hover h2{
+	font-size: 35px;
+}
+
+.produtos h2{
+	font-size: 32px;
+	font-weight: bold;
+}
+.produto-descricao{
+	font-size: 20px;
+}
+
+.produto-preco{
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+/*Fim do Conteudo Produtos*/
+
+/*Inicio do Rodapé*/
+
+footer{
+	background: url("imagens/bg.jpg");
+	text-align: center;
+	padding: 40px 0;
+}
+
+.imagemRodape{
+	width: 12%;
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+/*Fim do Rodapé*/
+
+
+/*Inicio do Conteudo Contato*/
+main{
+
+}
+
+form{
+	width: 940px;
+	margin: 40px auto;
+}
+
+form label, form legend{
+	display: block;
+	font-size: 25px;
+	margin: 0 0 10px;
+}
+
+.input-padrao{
+	/*display: block;*/
+	margin:0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover{
+	background: red;
+	transform: scale(1.05);
+}
+
+.tabela{
+	width: 940px;
+	margin: 40px auto;
+}
+
+table{
+	margin: 20px 0 40px;
+	font-size: 1.4em;
+}
+
+thead{
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th{
+	border: 1px solid #000000;
+	padding:8px 15px;
+}
+/*Fim do Conteudo Contato*/
+
+/*CSS Pág Inicial*/
+.banner{
+	width: 100%;
+	height: 800px;
+	/*border: 1px solid #000000;*/
+}
+
+.titulo-principal{
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.principal{
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p{
+	font-size: 30px;
+	margin: 0 0 1em;
+}
+
+.principal strong{
+	font-weight: bold;
+}
+
+.principal em{
+	font-style: italic;
+}
+
+.imagemUtensilios{
+	width: 160px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.mapa{
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p{
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios{
+	padding: 3em 0;
+	background: linear-gradient(#888888, #1C1C1C);
+}
+
+.itens{
+	line-height: 1.5em;
+	font-size: 1.6em;
+}
+
+.conteudo-beneficios{
+	width: 840px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width: 35%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens:first-child{
+	font-weight: bold;
+}
+
+.itens:before{
+	content: "🟊";
+}
+
+.imagem-Beneficios{
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 15px 15px 8px #000000;
+}
+
+.imagem-Beneficios:hover{
+	opacity: 0.3;
+}
+
+.video{
+	width: 560px;
+	margin: 2em auto;
+
+}
+/*Fim pág Inicial*/
+
+/*Config Screen até 480px*/
+
+@media screen and (max-width: 480px){
+	/*Pagina Inicial*/
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+		text-align: center;
+	}
+
+	.banner{
+		height: auto;
+	}
+
+	.principal p{
+	font-size: 20px;
+    margin: 0 0 1em;
+    padding: 0 0.5em 0 0.5em
+	}
+
+	.mapa{
+    padding: 0.7em 0;
+	}
+
+	.lista-beneficios{
+		width: auto;
+		padding: 0 0.5em 0 0.5em;
+	}
+
+	.imagem-Beneficios{
+		width: 100%;
+		box-shadow: none;
+		margin-top: 0.5em;
+	}
+
+	.imagemRodape {
+    width: auto;
+	}
+	/*Fim Pagina Inicial*/
+
+	/*Pagina Produto*/
+	.produtos{
+		width: auto;
+	}
+	.produtos li{
+		width: auto;
+		margin: 1em;
+
+	}
+
+	.produto-descricao{
+		font-size: 1.8em;
+	}
+	/*Fim Pagina Produtos*/
+
+	/*Pagina Contatos*/
+	form{
+		width: auto;
+		text-align: center;
+	}
+
+	.tabela{
+	width: auto;
+	padding: 0 0 0 15px;
+	}
+	
+	table{
+		margin: 1em 22%;
+	}
+	/*Fim Pagina Contatos*/
+}
+
+
+
+
+
+
+/*CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. 
+O CSS separa o conteúdo da representação visual do site.
+Pense  na decoração da sua página.
+Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos.
+Também pode criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante.*/
+
+/*Definiçoes sobre display e suas atribuições https://developer.mozilla.org/pt-BR/docs/Web/CSS/display*/
